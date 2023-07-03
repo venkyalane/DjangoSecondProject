@@ -1,0 +1,42 @@
+<!doctype hmtl>
+<html>
+<title>FORM</title>
+<style>
+.main {
+    background-color:red;
+    color:white;
+    text-align:center;
+
+}
+</style>
+
+<body>
+<h1 class="main"><b>welcome to registration form</b></h1>
+<div class="row">
+<div class="col-12">
+<form method="POST">
+{% csrf_token %}
+<div>
+<div style="text-align:center">
+<label for="">Name:-</label>
+<input type="text" name="Name" values="{{n1}}"  class="form-control"/>
+</div><br>
+<div>
+<div style="text-align:center">
+<label for="">Phone:-</label>
+<input type="int" name="Phone" values="{{n2}}" class="form-control"/>
+</div><br>
+<div>
+<div style="text-align:center">
+<label for="">Address:-</label>
+<input type="text" name="Address" values="{{n3}}" class="form-control"/>
+</div><br>
+<div>
+<div class="pt-100">
+<div style="text-align:center">
+<button type="submmit">Save</button><br><br>
+output:-
+<input type='text' values="{{details}}"/>
+</div>
+</body>
+</html>
